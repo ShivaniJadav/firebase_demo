@@ -35,5 +35,5 @@ exports.addData = functions.https.onRequest(async (request, response) => {
     await db.collection('InventoryItem').doc('xyz').set({
         "id":"3","Description":"soap","Brand":"pears","Price":90,"name":"soap"
     })
-    response.send("product added!")
+    response.send("product added successfully!")
 });
